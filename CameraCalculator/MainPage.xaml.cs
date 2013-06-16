@@ -18,8 +18,17 @@ namespace CameraCalculator
         {
             InitializeComponent();
 
+            // Initial camera type data
+            List<string> types = new List<string>() { "7500HS", "7500LS", "8K-320", "8K-640", "5150" };
+            this.cameraType.ItemsSource = types;
+
             // 將 ApplicationBar 當地語系化的程式碼範例
             //BuildLocalizedApplicationBar();
+        }
+
+        private void calculate_Click(object sender, RoutedEventArgs e)
+        {
+
         }
 
         // 建置當地語系化 ApplicationBar 的程式碼範例
